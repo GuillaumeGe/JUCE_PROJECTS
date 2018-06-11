@@ -1,0 +1,25 @@
+Waveform creator:
+  - GUI
+    - SampleSlider class
+    - MouseListener & MouseEvent
+    - number of sample scalable
+    - auto sliderStretch
+    - display a smooth waveform above sliders
+  - XML waveform save
+    - define format & tags
+    - Read xml & load on app
+    - Write xml from app
+  - Real time sound preview
+  - Scalable
+  
+  Synthia:
+    - To be defined ...
+    - Integrate Waveform creator
+    - Load xml waveform
+    - xml presets
+    - add keyboard
+    - add multiple osc
+    - add filter
+    - add effects
+    - polyphonic
+    
