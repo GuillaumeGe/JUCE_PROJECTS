@@ -1,0 +1,9 @@
+<Name>RandomWaveTable</Name>
+<nSample>5</nSample>
+<Data>
+	<Sample id="0">0.25</Sample>
+	<Sample id="1">-0.25</Sample>
+	<Sample id="2">-0.75</Sample>
+	<Sample id="3">0.85</Sample>
+	<Sample id="4">0.45</Sample>
+</Data>

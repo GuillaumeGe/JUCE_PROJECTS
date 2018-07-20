@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="TsVkzG" name="waveformCreator" displaySplashScreen="1" reportAppUsage="1"
+              splashScreenColour="Dark" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.waveformCreator" includeBinaryInAppConfig="1"
+              cppLanguageStandard="11" companyCopyright="" jucerVersion="5.3.2">
+  <MAINGROUP id="S97Epr" name="waveformCreator">
+    <GROUP id="{9A8FDC97-8E43-CB92-16E9-D5FE74559FF8}" name="Source">
+      <FILE id="QyKslw" name="WavetableEditor.cpp" compile="1" resource="0"
+            file="Source/WavetableEditor.cpp"/>
+      <FILE id="FRrjgJ" name="WavetableEditor.h" compile="0" resource="0"
+            file="Source/WavetableEditor.h"/>
+      <FILE id="pV9LFi" name="Wavetable.cpp" compile="1" resource="0" file="Source/Wavetable.cpp"/>
+      <FILE id="hkoB97" name="Wavetable.h" compile="0" resource="0" file="Source/Wavetable.h"/>
+      <FILE id="apNsmS" name="CustomComponentLook.cpp" compile="1" resource="0"
+            file="Source/CustomComponentLook.cpp"/>
+      <FILE id="qP3LZH" name="CustomComponentLook.h" compile="0" resource="0"
+            file="Source/CustomComponentLook.h"/>
+      <FILE id="ggGQKK" name="Utils.cpp" compile="1" resource="0" file="Source/Utils.cpp"/>
+      <FILE id="mZ9dKP" name="Utils.h" compile="1" resource="0" file="Source/Utils.h"/>
+      <FILE id="QzkW7N" name="UserComponent.cpp" compile="1" resource="0"
+            file="Source/UserComponent.cpp"/>
+      <FILE id="Iwgzja" name="UserComponent.h" compile="1" resource="0" file="Source/UserComponent.h"/>
+      <FILE id="hrS2f2" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="pPhy3P" name="MainComponent.h" compile="1" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="mcf7At" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017" vst3Folder="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="0" isDebug="1" optimisation="1" targetName="waveformCreator"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="1" isDebug="0" optimisation="3" targetName="waveformCreator"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../Desktop/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+    <ANDROIDSTUDIO targetFolder="Builds/Android">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" androidArchitectures="armeabi x86" isDebug="1" optimisation="1"
+                       linkTimeOptimisation="0" targetName="waveformCreator"/>
+        <CONFIGURATION name="Release" androidArchitectures="" isDebug="0" optimisation="3"
+                       linkTimeOptimisation="1" targetName="waveformCreator"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../Desktop/JUCE/modules"/>
+      </MODULEPATHS>
+    </ANDROIDSTUDIO>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
