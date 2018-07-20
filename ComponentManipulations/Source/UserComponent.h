@@ -14,7 +14,7 @@ class Markup :public Component
 private:
 	Point<float> coord;
 	float trackPosition;
-
+	Anchor a;
 public:
 	
 
@@ -24,7 +24,7 @@ public:
 	}
 	Markup()
 	{
-
+		addAndMakeVisible(a);
 	}
 	~Markup()
 	{
@@ -37,7 +37,9 @@ public:
 	}
 	void paint(Graphics &g)override
 	{
-
+		a.paint(g);
+		g.setColour(a.getColour());
+		g.drawVerticalLine(a.getCenter().x, a.getBounds().getBottom(), this->getParentComponent()->getBounds().getHeight());
 	}
 	void mouseDown(const MouseEvent &event)override
 	{
@@ -150,6 +152,10 @@ public:
 			initR.getHeight());
 		this->toFront(false);
 		this->getParentComponent()->repaint();
+		if (sendNotification)
+		{
+			
+		}
 		//this->repaint();
 	}
 	void mouseDown(const MouseEvent &event)override
@@ -165,6 +171,10 @@ public:
 		//std::cout << "mouse at : " << getMouseXYRelative().x << ";" << getMouseXYRelative().y << std::endl;
 		std::cout << initR.getX() << ";" << initR.getY() << std::endl;
 		//this->setPosition(juce::Point<float>(event.getPosition().x, event.getPosition().y));
+	}
+	juce::Point<float> getCenter()
+	{
+		return this->getBounds().getCentre().toFloat();
 	}
 
 	void setOpacity(float alpha)
@@ -183,6 +193,7 @@ private:
 	//juce::Point<float> center;
 	bool fill;
 	bool isFocusable;
+	bool sendNotification;
 	AnchorType type;
 	Colour lookColour;
 	MouseListener mL;
